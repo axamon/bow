@@ -38,7 +38,7 @@ func Lemmizza(parola string) (lemma string, err error) {
 
 }
 
-// String2Tokens receives a string and outputs a slice of lemmatized italian
+// String2Tokens receives a string and outputs a slice of lemmatized
 // tokens.
 func String2Tokens(str string) (tokens map[string]int) {
 	tokens = make(map[string]int)
@@ -62,6 +62,7 @@ func String2Tokens(str string) (tokens map[string]int) {
 	return tokens
 }
 
+// String2LemmiSet outputs a set of strings containing tokens of the input string.
 func String2LemmiSet(str string) (lemmiSet *stringset.StringSet) {
 
 	lemmiSet = stringset.NewStringSet()
