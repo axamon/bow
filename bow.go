@@ -29,10 +29,6 @@ var alphareg, _ = regexp.Compile(`[^a-z]+`)
 func Lemmizza(parola string) (lemma string, err error) {
 
 	lemma = lemmat.Lemma(parola)
-	if parola == "" {
-		log.Printf("Nessuna corrispondenza er %s\n", parola)
-	}
-	//fmt.Println(lemma)
 
 	return lemma, err
 
